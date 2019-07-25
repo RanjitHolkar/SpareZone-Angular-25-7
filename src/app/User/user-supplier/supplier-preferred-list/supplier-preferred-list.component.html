@@ -1,0 +1,563 @@
+<div class="wrapper">
+
+  <noscript>
+  <div id="jqcheck"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB60lEQVQ4T2NkwAHePzrxf3ebL1jWp/0oA5egGiM2pVgFQQq31uj/N/ANZvj+8T3D7aNHGDwbTxNvwKtbO/9f3dLHYJ+axfDn5w+GI/NnMRhFtTEISJtjGIIh8Pv39/87ak0ZzCLiGMRUNMCufnLxDMOlrZsY3JtOMrCwsKPowTDg3tGZ/59f2sVgFRvPkO+bAzZgwsZJDEcXzWNQtIlikDGIwG3Az+9v/+9qsGOwTc1h4JeQhhswcfMUhrcP7zEcXzyXwb3xMAMbuwDcEBTTzi7P/s/M8IFB3zccbDPMBSADQODs2sUMzFwyDIah/ZgGfHt/7/+BvmAGm+RsBl4RMawGfHr5jOHowlkMjiUbGDj55MCGwE060Of1X0RZi0Hb2Q4e3eguAElc2X2A4e2DmwwOhVsRBnx6cfH/yXm5DFZxyQxcAoJ4Dfj24T3DsUVzGcwSJjLwSxkygk3ZVmv4X805gkHZRBNXwkQRv3/+NsP1nUsYvFvOMzI+PLXo/73DSxgsouIYOHj5UBRi8wJIwY8vnxlOLV/CIGcewsC4vkDhv01yLoOIoiqG7bgMACn88Owxw8HpvQyMGwqV/vs19TMwQnxDEthYW8DAeGCC3/9XN46TpBGmWEzDkoHx06dP/z9//kyWAby8vAwAcza2SBMOSCMAAAAASUVORK5CYII="> Javascript is disabled. Please enable it for better working experience.</div>
+  </noscript>        
+  
+  <header class="header">
+    <div class="container">
+      <div class="row">
+        <div class="mnu">	
+          <span class="hamburger hamburger--collapse">
+            <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+          </span>	
+          <div class="respon navbar-main">
+          <div class="search-box">
+            <form>
+              <input type="text" placeholder="Track Here">
+              <button type="submit"><img src="assets/images/search-icon.png" alt="" /></button>
+            </form>
+          </div>
+            <ul class="nav navbar-nav">
+              <li><a href="member-listing.php">Members</a></li>
+              <li><a href="signup.php">Sign Up</a></li>
+              <li><a href="login.php">Login</a></li>
+              <li><a href="javascript:;" class="sidebar-btn">Contact</a></li>								                              
+            </ul>						
+          </div>
+        </div>					
+      </div>
+    </div>
+    <div class="logo"><a href="index.php"><img src="assets/images/logo.png" alt="" /></a></div>
+  </header>
+      <div class="commonBgDiv"><img src="assets/images/banner.jpg" alt="" /></div>
+        <div class="banner-wrap">
+  
+  <!--== SUPPLIER SELECTION MODAL START ==-->
+  <div class="overlay"></div>
+  <div class="popup supplier_selection">
+     <div class="boxs">
+        <div class="boxs-in">
+           <h3 class="title-supply">Supplier Selection </h3>
+           <div class="supply_selection">
+              <div class="col-md-8">
+                 <p>Note: Minimum 10 - Max Supplier Must Be Selected</p>
+              </div>
+              <div class="col-md-8">
+                 <ul class="list-inline text-right">
+                    <li><a href="javascript:void(0);">Click Here</a> To Select Prefered Supplier.</li>
+                    <li><a href="javascript:void(0);"> Select Here. </a></li>
+                 </ul>
+              </div>
+           </div>
+           <div class="select_rec">
+              <div class="col-md-3">
+                 <div class="row">
+                    <p>Selected: <span>11</span></p>
+                 </div>
+              </div>
+              <div class="col-md-9">
+                 <div class="text-right button_recommnded">
+                    <button class="btn-def btnsld white btn_rec" data-dismiss="modal" type="submit" value="Find Part" data-tab="NextStep">Recommend Me!</button>									
+                    <button class="btn-def btnsld " type="submit" value="Find Part" data-tab="NextStep">Send</button>									
+                 </div>
+              </div>
+              <div class="clearfix"></div>
+           </div>
+        </div>
+     </div>
+     <div class="row supplier_type">
+        <div class="col-md-3">
+           <div class="supplier_type_main">
+              <h4>Genuine</h4>
+              <div class="form-group">
+                 <input type="text" placeholder="Search" class="form-control">
+              </div>
+              <div class="lister onsc gf">
+                 <div style="padding-right: 0;">
+                    <div class="selected_supply active clearfix">
+                       <div class="checkbox sale">
+                          <input id="checkbox101" type="checkbox">
+                          <label class="label_supply" for="checkbox101"></label>
+                       </div>
+                       <img src="assets/images/g_sp.png" class="img-ss" alt="genuine sp">
+                       <h4 class="name_supplier">Peter Kittle Toyota</h4>
+                       <p><i class="fa fa-map-marker" aria-hidden="true"></i> Elizabeth Park, NSW</p>
+                       <div class="">
+                          <div class="col-md-8">
+                             <div class="row">
+                                <ul class="list-inline starr_rrating">
+                                   <li><img src="assets/images/star_rated.png" alt="star"></li>
+                                   <li><img src="assets/images/star_rated.png" alt="star"></li>
+                                   <li><img src="assets/images/star_rated.png" alt="star"></li>
+                                   <li><img src="assets/images/star_rated.png" alt="star"></li>
+                                   <li><img src="assets/images/star-empty.png" alt="star"></li>
+                                </ul>
+                             </div>
+                          </div>
+                          <div class="col-md-4">
+                             <div class="row">
+                                <p class="text-right outofsupply">121/33</p>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                    <div class="selected_supply active clearfix">
+                       <div class="checkbox sale">
+                          <input id="checkboxh" type="checkbox">
+                          <label class="label_supply" for="checkboxh"></label>
+                       </div>
+                       <img src="assets/images/g_sp.png" class="img-ss" alt="genuine sp">
+                       <h4 class="name_supplier">Peter Kittle Toyota</h4>
+                       <p><i class="fa fa-map-marker" aria-hidden="true"></i> Elizabeth Park, NSW</p>
+                       <div class="">
+                          <div class="col-md-8">
+                             <div class="row">
+                                <ul class="list-inline starr_rrating">
+                                   <li><img src="assets/images/star_rated.png" alt="star"></li>
+                                   <li><img src="assets/images/star_rated.png" alt="star"></li>
+                                   <li><img src="assets/images/star_rated.png" alt="star"></li>
+                                   <li><img src="assets/images/star_rated.png" alt="star"></li>
+                                   <li><img src="assets/images/star-empty.png" alt="star"></li>
+                                </ul>
+                             </div>
+                          </div>
+                          <div class="col-md-4">
+                             <div class="row">
+                                <p class="text-right outofsupply">121/33</p>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                    <div class="selected_supply clearfix">
+                       <div class="checkbox sale">
+                          <input id="checkboxm" type="checkbox">
+                          <label class="label_supply" for="checkboxm"></label>
+                       </div>
+                       <img src="assets/images/g_sp.png" class="img-ss" alt="genuine sp">
+                       <h4 class="name_supplier">Peter Kittle Toyota</h4>
+                       <p><i class="fa fa-map-marker" aria-hidden="true"></i> Elizabeth Park, NSW</p>
+                       <div class="">
+                          <div class="col-md-8">
+                             <div class="row">
+                                <ul class="list-inline starr_rrating">
+                                   <li><img src="assets/images/star_rated.png" alt="star"></li>
+                                   <li><img src="assets/images/star_rated.png" alt="star"></li>
+                                   <li><img src="assets/images/star_rated.png" alt="star"></li>
+                                   <li><img src="assets/images/star_rated.png" alt="star"></li>
+                                   <li><img src="assets/images/star-empty.png" alt="star"></li>
+                                </ul>
+                             </div>
+                          </div>
+                          <div class="col-md-4">
+                             <div class="row">
+                                <p class="text-right outofsupply">121/33</p>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                    <div class="selected_supply clearfix">
+                       <div class="checkbox sale">
+                          <input id="checkboxu" type="checkbox">
+                          <label class="label_supply" for="checkboxu"></label>
+                       </div>
+                       <img src="assets/images/g_sp.png" class="img-ss" alt="genuine sp">
+                       <h4 class="name_supplier">Peter Kittle Toyota</h4>
+                       <p><i class="fa fa-map-marker" aria-hidden="true"></i> Elizabeth Park, NSW</p>
+                       <div class="">
+                          <div class="col-md-8">
+                             <div class="row">
+                                <ul class="list-inline starr_rrating">
+                                   <li><img src="assets/images/star_rated.png" alt="star"></li>
+                                   <li><img src="assets/images/star_rated.png" alt="star"></li>
+                                   <li><img src="assets/images/star_rated.png" alt="star"></li>
+                                   <li><img src="assets/images/star_rated.png" alt="star"></li>
+                                   <li><img src="assets/images/star-empty.png" alt="star"></li>
+                                </ul>
+                             </div>
+                          </div>
+                          <div class="col-md-4">
+                             <div class="row">
+                                <p class="text-right outofsupply">121/33</p>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+        <div class="col-md-3">
+           <div class="supplier_type_main">
+              <h4>Used</h4>
+              <div class="form-group">
+                 <input type="text" placeholder="Search" class="form-control">
+              </div>
+              <div class="lister onsc gf">
+                 <div style="padding-right: 0;">
+                    <div class="selected_supply clearfix">
+                       <div class="checkbox sale">
+                          <input id="ucheckbox101" type="checkbox">
+                          <label class="label_supply" for="ucheckbox101"></label>
+                       </div>
+                       <img src="assets/images/u_sp.png" class="img-ss" alt="genuine sp">
+                       <h4 class="name_supplier">Peter Kittle Toyota</h4>
+                       <p><i class="fa fa-map-marker" aria-hidden="true"></i> Elizabeth Park, NSW</p>
+                       <div class="">
+                          <div class="col-md-8">
+                             <div class="row">
+                                <ul class="list-inline starr_rrating">
+                                   <li><img src="assets/images/star_rated.png" alt="star"></li>
+                                   <li><img src="assets/images/star_rated.png" alt="star"></li>
+                                   <li><img src="assets/images/star_rated.png" alt="star"></li>
+                                   <li><img src="assets/images/star_rated.png" alt="star"></li>
+                                   <li><img src="assets/images/star-empty.png" alt="star"></li>
+                                </ul>
+                             </div>
+                          </div>
+                          <div class="col-md-4">
+                             <div class="row">
+                                <p class="text-right outofsupply">121/33</p>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                    <div class="selected_supply clearfix">
+                       <div class="checkbox sale">
+                          <input id="ucheckboxh" type="checkbox">
+                          <label class="label_supply" for="ucheckboxh"></label>
+                       </div>
+                       <img src="assets/images/u_sp.png" class="img-ss" alt="genuine sp">
+                       <h4 class="name_supplier">Peter Kittle Toyota</h4>
+                       <p><i class="fa fa-map-marker" aria-hidden="true"></i> Elizabeth Park, NSW</p>
+                       <div class="">
+                          <div class="col-md-8">
+                             <div class="row">
+                                <ul class="list-inline starr_rrating">
+                                   <li><img src="assets/images/star_rated.png" alt="star"></li>
+                                   <li><img src="assets/images/star_rated.png" alt="star"></li>
+                                   <li><img src="assets/images/star_rated.png" alt="star"></li>
+                                   <li><img src="assets/images/star_rated.png" alt="star"></li>
+                                   <li><img src="assets/images/star-empty.png" alt="star"></li>
+                                </ul>
+                             </div>
+                          </div>
+                          <div class="col-md-4">
+                             <div class="row">
+                                <p class="text-right outofsupply">121/33</p>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                    <div class="selected_supply clearfix">
+                       <div class="checkbox sale">
+                          <input id="ucheckboxm" type="checkbox">
+                          <label class="label_supply" for="ucheckboxm"></label>
+                       </div>
+                       <img src="assets/images/u_sp.png" class="img-ss" alt="genuine sp">
+                       <h4 class="name_supplier">Peter Kittle Toyota</h4>
+                       <p><i class="fa fa-map-marker" aria-hidden="true"></i> Elizabeth Park, NSW</p>
+                       <div class="">
+                          <div class="col-md-8">
+                             <div class="row">
+                                <ul class="list-inline starr_rrating">
+                                   <li><img src="assets/images/star_rated.png" alt="star"></li>
+                                   <li><img src="assets/images/star_rated.png" alt="star"></li>
+                                   <li><img src="assets/images/star_rated.png" alt="star"></li>
+                                   <li><img src="assets/images/star_rated.png" alt="star"></li>
+                                   <li><img src="assets/images/star-empty.png" alt="star"></li>
+                                </ul>
+                             </div>
+                          </div>
+                          <div class="col-md-4">
+                             <div class="row">
+                                <p class="text-right outofsupply">121/33</p>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                    <div class="selected_supply clearfix">
+                       <div class="checkbox sale">
+                          <input id="ucheckboxu" type="checkbox">
+                          <label class="label_supply" for="ucheckboxu"></label>
+                       </div>
+                       <img src="assets/images/u_sp.png" class="img-ss" alt="genuine sp">
+                       <h4 class="name_supplier">Peter Kittle Toyota</h4>
+                       <p><i class="fa fa-map-marker" aria-hidden="true"></i> Elizabeth Park, NSW</p>
+                       <div class="">
+                          <div class="col-md-8">
+                             <div class="row">
+                                <ul class="list-inline starr_rrating">
+                                   <li><img src="assets/images/star_rated.png" alt="star"></li>
+                                   <li><img src="assets/images/star_rated.png" alt="star"></li>
+                                   <li><img src="assets/images/star_rated.png" alt="star"></li>
+                                   <li><img src="assets/images/star_rated.png" alt="star"></li>
+                                   <li><img src="assets/images/star-empty.png" alt="star"></li>
+                                </ul>
+                             </div>
+                          </div>
+                          <div class="col-md-4">
+                             <div class="row">
+                                <p class="text-right outofsupply">121/33</p>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+        <div class="col-md-3">
+           <div class="supplier_type_main">
+              <h4>AfterMarket</h4>
+              <div class="form-group">
+                 <input type="text" placeholder="Search" class="form-control">
+              </div>
+              <div class="lister onsc gf">
+                 <div style="padding-right: 0;">
+                    <div class="selected_supply  clearfix">
+                       <div class="checkbox sale">
+                          <input id="aftercheckbox101" type="checkbox">
+                          <label class="label_supply" for="aftercheckbox101"></label>
+                       </div>
+                       <img src="assets/images/after_sp.png" class="img-ss" alt="genuine sp">
+                       <h4 class="name_supplier">Peter Kittle Toyota</h4>
+                       <p><i class="fa fa-map-marker" aria-hidden="true"></i> Elizabeth Park, NSW</p>
+                       <div class="">
+                          <div class="col-md-8">
+                             <div class="row">
+                                <ul class="list-inline starr_rrating ">
+                                   <li><img src="assets/images/star_rated.png" alt="star"></li>
+                                   <li><img src="assets/images/star_rated.png" alt="star"></li>
+                                   <li><img src="assets/images/star_rated.png" alt="star"></li>
+                                   <li><img src="assets/images/star_rated.png" alt="star"></li>
+                                   <li><img src="assets/images/star-empty.png" alt="star"></li>
+                                </ul>
+                             </div>
+                          </div>
+                          <div class="col-md-4">
+                             <div class="row">
+                                <p class="text-right outofsupply">121/33</p>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                    <div class="selected_supply active clearfix">
+                       <div class="checkbox sale">
+                          <input id="aftercheckboxh" type="checkbox">
+                          <label class="label_supply" for="aftercheckboxh"></label>
+                       </div>
+                       <img src="assets/images/after_sp.png" class="img-ss" alt="genuine sp">
+                       <h4 class="name_supplier">Peter Kittle Toyota</h4>
+                       <p><i class="fa fa-map-marker" aria-hidden="true"></i> Elizabeth Park, NSW</p>
+                       <div class="">
+                          <div class="col-md-8">
+                             <div class="row">
+                                <ul class="list-inline starr_rrating">
+                                   <li><img src="assets/images/star_rated.png" alt="star"></li>
+                                   <li><img src="assets/images/star_rated.png" alt="star"></li>
+                                   <li><img src="assets/images/star_rated.png" alt="star"></li>
+                                   <li><img src="assets/images/star_rated.png" alt="star"></li>
+                                   <li><img src="assets/images/star-empty.png" alt="star"></li>
+                                </ul>
+                             </div>
+                          </div>
+                          <div class="col-md-4">
+                             <div class="row">
+                                <p class="text-right outofsupply">121/33</p>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                    <div class="selected_supply clearfix">
+                       <div class="checkbox sale">
+                          <input id="aftercheckboxm" type="checkbox">
+                          <label class="label_supply" for="aftercheckboxm"></label>
+                       </div>
+                       <img src="assets/images/after_sp.png" class="img-ss" alt="genuine sp">
+                       <h4 class="name_supplier">Peter Kittle Toyota</h4>
+                       <p><i class="fa fa-map-marker" aria-hidden="true"></i> Elizabeth Park, NSW</p>
+                       <div class="">
+                          <div class="col-md-8">
+                             <div class="row">
+                                <ul class="list-inline starr_rrating">
+                                   <li><img src="assets/images/star_rated.png" alt="star"></li>
+                                   <li><img src="assets/images/star_rated.png" alt="star"></li>
+                                   <li><img src="assets/images/star_rated.png" alt="star"></li>
+                                   <li><img src="assets/images/star_rated.png" alt="star"></li>
+                                   <li><img src="assets/images/star-empty.png" alt="star"></li>
+                                </ul>
+                             </div>
+                          </div>
+                          <div class="col-md-4">
+                             <div class="row">
+                                <p class="text-right outofsupply">121/33</p>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                    <div class="selected_supply clearfix">
+                       <div class="checkbox sale">
+                          <input id="aftercheckboxu" type="checkbox">
+                          <label class="label_supply" for="aftercheckboxu"></label>
+                       </div>
+                       <img src="assets/images/after_sp.png" class="img-ss" alt="genuine sp">
+                       <h4 class="name_supplier">Peter Kittle Toyota</h4>
+                       <p><i class="fa fa-map-marker" aria-hidden="true"></i> Elizabeth Park, NSW</p>
+                       <div class="">
+                          <div class="col-md-8">
+                             <div class="row">
+                                <ul class="list-inline starr_rrating">
+                                   <li><img src="assets/images/star_rated.png" alt="star"></li>
+                                   <li><img src="assets/images/star_rated.png" alt="star"></li>
+                                   <li><img src="assets/images/star_rated.png" alt="star"></li>
+                                   <li><img src="assets/images/star_rated.png" alt="star"></li>
+                                   <li><img src="assets/images/star-empty.png" alt="star"></li>
+                                </ul>
+                             </div>
+                          </div>
+                          <div class="col-md-4">
+                             <div class="row">
+                                <p class="text-right outofsupply">121/33</p>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+        <div class="col-md-3">
+           <div class="supplier_type_main">
+              <h4>Recon</h4>
+              <div class="form-group">
+                 <input type="text" placeholder="Search" class="form-control">
+              </div>
+              <div class="lister onsc gf gf">
+                 <div style="padding-right: 0;">
+                    <div class="selected_supply  clearfix">
+                       <div class="checkbox sale">
+                          <input id="rcheckbox101" type="checkbox">
+                          <label class="label_supply" for="rcheckbox101"></label>
+                       </div>
+                       <img src="assets/images/r_sp.png" class="img-ss" alt="genuine sp">
+                       <h4 class="name_supplier">Peter Kittle Toyota</h4>
+                       <p><i class="fa fa-map-marker" aria-hidden="true"></i> Elizabeth Park, NSW</p>
+                       <div class="">
+                          <div class="col-md-8">
+                             <div class="row">
+                                <ul class="list-inline starr_rrating">
+                                   <li><img src="assets/images/star_rated.png" alt="star"></li>
+                                   <li><img src="assets/images/star_rated.png" alt="star"></li>
+                                   <li><img src="assets/images/star_rated.png" alt="star"></li>
+                                   <li><img src="assets/images/star_rated.png" alt="star"></li>
+                                   <li><img src="assets/images/star-empty.png" alt="star"></li>
+                                </ul>
+                             </div>
+                          </div>
+                          <div class="col-md-4">
+                             <div class="row">
+                                <p class="text-right outofsupply">121/33</p>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                    <div class="selected_supply  clearfix">
+                       <div class="checkbox sale">
+                          <input id="rcheckbox102" type="checkbox">
+                          <label class="label_supply" for="rcheckbox102"></label>
+                       </div>
+                       <img src="assets/images/r_sp.png" class="img-ss" alt="genuine sp">
+                       <h4 class="name_supplier">Peter Kittle Toyota</h4>
+                       <p><i class="fa fa-map-marker" aria-hidden="true"></i> Elizabeth Park, NSW</p>
+                       <div class="">
+                          <div class="col-md-8">
+                             <div class="row">
+                                <ul class="list-inline starr_rrating">
+                                   <li><img src="assets/images/star_rated.png" alt="star"></li>
+                                   <li><img src="assets/images/star_rated.png" alt="star"></li>
+                                   <li><img src="assets/images/star_rated.png" alt="star"></li>
+                                   <li><img src="assets/images/star_rated.png" alt="star"></li>
+                                   <li><img src="assets/images/star-empty.png" alt="star"></li>
+                                </ul>
+                             </div>
+                          </div>
+                          <div class="col-md-4">
+                             <div class="row">
+                                <p class="text-right outofsupply">121/33</p>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                    <div class="selected_supply clearfix">
+                       <div class="checkbox sale">
+                          <input id="rcheckbox103" type="checkbox">
+                          <label class="label_supply" for="rcheckbox103"></label>
+                       </div>
+                       <img src="assets/images/r_sp.png" class="img-ss" alt="genuine sp">
+                       <h4 class="name_supplier">Peter Kittle Toyota</h4>
+                       <p><i class="fa fa-map-marker" aria-hidden="true"></i> Elizabeth Park, NSW</p>
+                       <div class="">
+                          <div class="col-md-8">
+                             <div class="row">
+                                <ul class="list-inline starr_rrating">
+                                   <li><img src="assets/images/star_rated.png" alt="star"></li>
+                                   <li><img src="assets/images/star_rated.png" alt="star"></li>
+                                   <li><img src="assets/images/star_rated.png" alt="star"></li>
+                                   <li><img src="assets/images/star_rated.png" alt="star"></li>
+                                   <li><img src="assets/images/star-empty.png" alt="star"></li>
+                                </ul>
+                             </div>
+                          </div>
+                          <div class="col-md-4">
+                             <div class="row">
+                                <p class="text-right outofsupply">121/33</p>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                    <div class="selected_supply clearfix">
+                       <div class="checkbox sale">
+                          <input id="rcheckbox104" type="checkbox">
+                          <label class="label_supply" for="rcheckbox104"></label>
+                       </div>
+                       <img src="assets/images/r_sp.png" class="img-ss" alt="genuine sp">
+                       <h4 class="name_supplier">Peter Kittle Toyota</h4>
+                       <p><i class="fa fa-map-marker" aria-hidden="true"></i> Elizabeth Park, NSW</p>
+                       <div class="">
+                          <div class="col-md-8">
+                             <div class="row">
+                                <ul class="list-inline starr_rrating">
+                                   <li><img src="assets/images/star_rated.png" alt="star"></li>
+                                   <li><img src="assets/images/star_rated.png" alt="star"></li>
+                                   <li><img src="assets/images/star_rated.png" alt="star"></li>
+                                   <li><img src="assets/images/star_rated.png" alt="star"></li>
+                                   <li><img src="assets/images/star-empty.png" alt="star"></li>
+                                </ul>
+                             </div>
+                          </div>
+                          <div class="col-md-4">
+                             <div class="row">
+                                <p class="text-right outofsupply">121/33</p>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </div>
+  </div>
+  <!--== SUPPLIER SELECTION MODAL END ==--> 
+  
+      <footer>
+        <div class="container">
+          <div class="row">
+  
+          </div>
+        </div>
+      </footer>
+    </div>
