@@ -1,0 +1,158 @@
+<!-- fix bg -->
+<div class="commonBGdiv">
+  <img src="assets/images/bg.png" class="bgImageCommon">
+</div>
+<!-- fix bg -->
+<!-- main Page -->
+<div class="commonMainDiv">
+  <!-- menu strat -->
+  <div class="container-fluid paddLR50">
+    <div class="menuDiv">
+      <div class="menuLeftSuplier">
+        <img src="assets/images/smalllogo.png" class="menuLogo">
+      </div>
+      <div class="menurightSuplier">
+        <div class="searchDivMenu">
+          <input type="text" class="serchMenu">
+          <img src="assets/images/beatIcon.png" class="beatIcon">
+        </div>
+        <a>Members</a>
+        <a>Sign Up</a>
+        <a>Login</a>
+        <a>Contact</a>
+      </div>
+    </div>
+  </div>
+  <!-- menu end -->
+  <!-- supplier Profile -->
+  <div class="supplierDiv">
+    <div class="supplierDivInner">
+      <div class="custumPop">
+        <div class="custumPopHead">
+          <h4 class="popHead">Edit Profile</h4>
+        </div>
+        <form [formGroup]="editForm" (submit)="updateDetails()">
+        <div class="custumPopBody" *ngFor="let details of userDetails">
+          <div class="popSupplierText">
+            <div class="width40N">
+              <div class="imageDiv">
+                <img [src]="imagesUrl || base_url + details.profile_logo" class="profilrPicIcon">
+              </div>
+              <div class="btnDiv">
+                <div class="uploadBtnDiv">
+                  <button class="btn btnBlueNew uploadBtn">Change Logo</button>
+                  <input type="file" class="uploadInput" (change)="uploadFiles($event)">
+                </div>
+                <p>Member ID: {{details.member_no}}</p>
+              </div>
+              <div class="formgroup marT30 text-center">
+                <p><input type="checkbox" class="checkIcon">Auto Recommend Suppliers</p>
+                <img src="assets/images/supplier.png" class="supplierImg">
+              </div>
+              <div class="formgroup mar0">
+                <p><input type="checkbox" class="checkIcon">Auto Recommend Suppliers</p>
+              </div>
+              <div class="formgroup">
+                <label>Capricorn No.</label>
+                <input type="text" class="commonInput" formControlName="is_capricon" [(ngModel)]="details.is_capricon">
+                <div *ngIf="submit && f.is_capricon.errors" class="invalid-feedback">
+                    <div *ngIf="f.is_capricon.errors.required" >Capricorn No. is required</div>
+                </div>
+              </div>
+            </div>
+            <div class="width60N">
+              <div class="formgroup">
+                <label>Business Name</label>
+                <input type="text" class="commonInput" formControlName="business_name" [(ngModel)]="details.business_name">
+                <div *ngIf="submit && f.business_name.errors" class="invalid-feedback">
+                    <div *ngIf="f.business_name.errors.required" >Business Name is required</div>
+                </div>
+              </div>
+              <div class="formgroup">
+                <label>Contact Person</label>
+                <input type="text" class="commonInput" formControlName="contact_person" [(ngModel)]="details.contact_person">
+                <div *ngIf="submit && f.contact_person.errors" class="invalid-feedback">
+                    <div *ngIf="f.contact_person.errors.required" >Contact Person is required</div>
+                </div>
+              </div>
+              <div class="formgroup">
+                <label>Address</label>
+                <input type="text" class="commonInput" formControlName="business_address" [(ngModel)]="details.business_address">
+                <div *ngIf="submit && f.business_address.errors" class="invalid-feedback">
+                    <div *ngIf="f.business_address.errors.required" >Address is required</div>
+                </div>
+              </div>
+              <div class="formgroup DisF marB10">
+                <div class="formgroup formgroupN2">
+                  <label>Suburb</label>
+                  <input type="text" class="commonInput" formControlName="suburbs" [(ngModel)]="details.suburbs">
+                  <div *ngIf="submit && f.suburbs.errors" class="invalid-feedback">
+                      <div *ngIf="f.suburbs.errors.required" >Suburb is required</div>
+
+                  </div>
+                </div>
+                <div class="formgroup formgroupN1 ">
+                  <label>Post Code </label>
+                  <input type="text" class="commonInput" formControlName="postcode" [(ngModel)]="details.postcode" (keypress)="numberOnly($event)">
+                  <div *ngIf="submit && f.postcode.errors" class="invalid-feedback">
+                      <div *ngIf="f.postcode.errors.required" >Post Code is required</div>
+                  </div>
+                </div>
+              </div>
+              <div class="formgroup DisF marB10">
+                <div class="formgroup formgroupN1" >
+                  <label>State</label>
+                  <input type="text" class="commonInput" formControlName="state" [(ngModel)]="details.state">
+                  <div *ngIf="submit && f.state.errors" class="invalid-feedback">
+                      <div *ngIf="f.state.errors.required" >State is required</div>
+
+                  </div>
+                </div>
+                <div class="formgroup formgroupN2 ">
+                  <label>ABN </label>
+                  <input type="text" class="commonInput" formControlName="business_abn" [(ngModel)]="details.business_abn">
+                  <div *ngIf="submit && f.business_abn.errors" class="invalid-feedback">
+                      <div *ngIf="f.business_abn.errors.required" >ABN is required</div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="formgroup">
+                <label>Phone Number:</label>
+                <input type="text" class="commonInput" formControlName="personal_contact" [(ngModel)]="details.personal_contact">
+                <div *ngIf="submit && f.personal_contact.errors" class="invalid-feedback">
+                    <div *ngIf="f.personal_contact.errors.required" >Phone Number is required</div>
+                </div>
+              </div>
+              <div class="formgroup">
+                <label>Email</label>
+                <input type="text" class="commonInput" formControlName="email_id" [(ngModel)]="details.email_id"> 
+                <div *ngIf="submit && f.email_id.errors" class="invalid-feedback">
+                    <div *ngIf="f.email_id.errors.required" >Email is required</div>
+                </div>
+              </div>
+              <div class="formgroup">
+                <label>Business Type</label>
+                <select class="commonInput" formControlName="business_type" [(ngModel)]="details.business_type">
+                  <option *ngFor="let type of businessType"> {{ type.business_type_name }} </option>
+                </select>
+                <div *ngIf="submit && f.business_type.errors" class="invalid-feedback">
+                    <div *ngIf="f.business_type.errors.required" >Business Type is required</div>
+                </div>
+              </div>
+              <div class="clearfix "></div>
+              <div class="text-center marT30">
+                <button class="btn commonWhiteBtn">Print</button>
+                <button class="btn commonBlueBtn lightBlueBtn" type="submit">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+      </div>
+    </div>
+  </div>
+  <!-- supplier Profile end-->
+  
+</div>
+<!-- main Page end-->

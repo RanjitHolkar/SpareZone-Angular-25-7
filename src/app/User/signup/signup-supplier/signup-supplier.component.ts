@@ -14,6 +14,7 @@ public supplierSignUpForm : FormGroup;
 public supplierSignUpFormSecond : FormGroup;
 public submit = false;
 public images :any;
+public businessType:any;
   constructor(
     private formBuilder:FormBuilder,
     private _signupSupplierService:SignupSupplierService,
@@ -21,6 +22,9 @@ public images :any;
     private router:Router) { }
 
   ngOnInit() {
+    this._signupSupplierService.getBusinessType().subscribe(res=>{
+      this.businessType = res['businessTypeData'];
+    })
     this.supplierSignUpForm = this.formBuilder.group({
       first_name:['',Validators.required],
       last_name :['',Validators.required],
@@ -32,7 +36,7 @@ public images :any;
       business_name :['',Validators.required],
       personal_contact :['',Validators.required],
       mobile_no :['',Validators.required],
-      business_contact_number :['',Validators.required],
+      contact_person :['',Validators.required],
       business_address :['',Validators.required],
       email_id : ['',[Validators.email,Validators.required]],
       business_abn : ['',Validators.required],
@@ -56,7 +60,7 @@ public images :any;
         let formData = new FormData();
         formData.append('business_name',this.supplierSignUpFormSecond.value.business_name);
         formData.append('personal_contact',this.supplierSignUpFormSecond.value.personal_contact);
-        formData.append('business_contact_number',this.supplierSignUpFormSecond.value.business_contact_number);
+        formData.append('contact_person',this.supplierSignUpFormSecond.value.contact_person);
         formData.append('business_address',this.supplierSignUpFormSecond.value.business_address);
         formData.append('email_id',this.supplierSignUpFormSecond.value.email_id);
         formData.append('business_abn',this.supplierSignUpFormSecond.value.business_abn);
@@ -67,8 +71,15 @@ public images :any;
         formData.append('password','123456');
         formData.append('user_role','4');
         this._signupSupplierService.signUp(formData).subscribe(res=>{
+          console.log(res);
+          if(res == 'success'){
           this.toastr.successToastr('Registration SuccessFully');
           this.router.navigate(['/supplier-dash']);
+          }else{
+            this.toastr.errorToastr('Failed Registration');
+          }
+         
+         
         })
            
       }

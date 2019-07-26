@@ -28,7 +28,6 @@ export class SignupCustomerComponent implements OnInit {
   public memberId:any;
   public customerSucess = false;
   public bussinessSucess = false;
-
     constructor(private formBuilder:FormBuilder,private SignupCustomerService :SignupCustomerService,private router: Router) { }
     ngOnInit() {
 

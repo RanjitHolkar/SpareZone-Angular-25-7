@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
   {
-    path:'',loadChildren: './login/login.module#LoginModule' 
+    path:'',loadChildren: './login/login.module#LoginModule',pathMatch:'full' 
   },
   {
     path:'login',loadChildren: './login/login.module#LoginModule' 
@@ -30,6 +30,12 @@ const routes: Routes = [
   },
   {
     path:'supplier-dash',loadChildren:'./User/user-supplier/supplier-dash/supplier-dash.module#SupplierDashModule'
+  },
+  {
+    path:'supplier-edit',loadChildren:'./User/user-supplier/supplier-edit/supplier-edit.module#SupplierEditModule'
+  },
+  {
+    path:'**',loadChildren: './login/login.module#LoginModule',pathMatch:'full' 
   }
 ];
 

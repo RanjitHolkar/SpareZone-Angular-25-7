@@ -146,9 +146,9 @@
                             </div>
                             <div class="formgroup">
                               <label>Contact Person</label>
-                              <input type="text" class="commonInput" formControlName="business_contact_number">
-                              <div *ngIf="submit && s.business_contact_number.errors" class="invalid-feedback">
-                                <div *ngIf="s.business_contact_number.errors.required">Contact Person r is required</div>
+                              <input type="text" class="commonInput" formControlName="contact_person">
+                              <div *ngIf="submit && s.contact_person.errors" class="invalid-feedback">
+                                <div *ngIf="s.contact_person.errors.required">Contact Person is required</div>
                               </div>
                             </div>
                           </div>
@@ -189,19 +189,14 @@
                             <div class="formgroup">
                               <label>Business Type</label>
                               <select class="commonInput" formControlName="business_type">
-                                <option>option1</option>
-                                <option>option1</option>
-                                <option>option1</option>
+                                <option value=''>--Select Type--</option>
+                                <option *ngFor="let type of businessType">{{type.business_type_name}}</option>
                               </select>
                               <div *ngIf="submit && s.business_type.errors" class="invalid-feedback">
                                 <div *ngIf="s.business_type.errors.required">Business Type is required</div>
                               </div>
                             </div>
                           </div>
-                          
-                          
-                        
-                          
                           <!-- <div class="clearfix "></div>
                           <div class="text-center marT30">
                             <button class="btn commonWhiteBtn">Print</button>
